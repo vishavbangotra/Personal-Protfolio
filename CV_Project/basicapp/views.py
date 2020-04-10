@@ -1,11 +1,6 @@
 from django.shortcuts import render
-from basicapp.models import Contact
-from basicapp.forms import ContactForm
+from django.views.generic import View, TemplateView, ListView
+from basicapp.models import skills_languages, skills_frameworks, skills_tools_vcs
 
-def index(request):
-    form = ContactForm()
-
-    if request.method == 'POST':
-        form = ContactForm(request.POST)
-
-    return render(request, 'basicapp/home.html', {'form':form})
+class index(TemplateView):
+    template_name='basicapp/Index.html'

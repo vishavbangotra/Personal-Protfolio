@@ -1,0 +1,73 @@
+{% extends 'basicapp/base.html' %}
+{% load static %}
+{% block body_block %}
+<div class="homepage">
+  <div>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Skills-sec">Skills</a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h1 class='main-name first-name'>Vishav</h1><h2 class="main-name last-name"> Bangotra</h2>
+    <ul class="nav justify-content-center">
+      <li class="nav-item" style="padding-left:6px !important; padding-right:6px !important;">
+        <a href="https://github.com/vishavbangotra"><img class="logos" src="{% static '/images/git.png' %}"alt="no git"></a>
+      </li>
+      <li class="nav-item" style="padding-left:6px !important; padding-right:6px !important;">
+        <a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos' src="{% static '/images/linkedin.png' %}" alt="no li"></a>
+      </li>
+    </ul>
+    <div class="webd"><span id='webd-1'>Full-stack</span><span id='webd-2'></span> Developer</div>
+    <!-- Down Button -->
+    <ul class="nav justify-content-center">
+      <li style='padding-top:240px; padding-bottom: 120px;'class='nav-item'><a href="#Skills-sec"><div class="arrow-down"></div></a></li>
+    </ul>
+  </div>
+</div>
+<div class='Skills'id='Skills-sec'>
+  <div id="skills-section">
+    <div id='ss1'>
+      <h3 style='font-size: 40px;'>Languages</h3>
+      <ul>
+        <li>C/C++</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+
+      </ul>
+    </div>
+    <div id='ss2'>
+      <br><br><br><br>
+      <h3 style='font-size: 40px;'>Libraries & Frameworks</h3>
+      <ul>
+        <li>Django</li>
+        <li>Bootstrap</li>
+        <li>JQuery</li>
+      </ul>
+    </div>
+    <h1 id='Skills-h1'>Skills</h1>
+    <div id='ss3'>
+      <h3 style='font-size: 40px;'>Tools & VCS</h3>
+        <ul>
+          <li style='margin-right: 5px;'>Atom text Editor</li>
+          <li style='margin-right: 12px;'>Sublime Text</li>
+          <li style='margin-right: 22px;'>Terminal</li>
+          <li style='margin-right: 16px;'>Git/Github</li>
+        </ul>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+{% endblock %}

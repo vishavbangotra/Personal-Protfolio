@@ -1,0 +1,101 @@
+.homepage{
+  background-color: #3AAFA9 !important;
+}
+/* navbar */
+.nav-item{
+  padding-top: 5px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.nav-link{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 24px;
+  color: white;
+}
+a:hover{
+  color: #17252A !important;
+}
+
+.main-name{
+  margin:0px;
+  border:0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Dosis', sans-serif;
+
+}
+.first-name{
+  padding-top: 11%;
+  color: #DEF2F1;
+  font-size: 45px;
+
+}
+.webd{
+  padding-left: 50px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin-left: 51%;
+  margin-top: -7.8%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  color: #17252A;
+}
+
+.last-name{
+  color: #17252A;
+  font-size: 32px;
+}
+.logos{
+  width:25px;
+  height: 36px;
+  padding-top: 15px;
+}
+.arrow-down {
+  color: #17252A;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  display: flex;
+  justify-content: center;
+  border-top: 20px solid #17252A;
+  margin-bottom: 100px;
+}
+/* Skills */
+.Skills{
+  background-color: #DEF2F1;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+#Skills-h1{
+    margin-left: 30px;;
+    margin-top: 0%;
+    font-size: 60px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-family: 'Dosis', sans-serif !important;
+    transform-origin: top left;
+    color: #17252A;
+}
+ul{
+   list-style-type: none;
+}
+#ss1{
+  padding-top: 6%;
+  margin-left: 20%;
+  font-size: 25px;
+}
+#ss2{
+  margin-top: -10%;
+  text-align:center;
+  font-size: 25px;
+}
+#ss3{
+  text-align: right;
+  margin-right: 18%;
+  margin-top: -9%;
+  font-size: 25px;
+}
+#Skills-section{
+  font-size: 30px;
+}
