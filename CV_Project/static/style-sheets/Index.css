@@ -61,65 +61,58 @@ a:hover{
   justify-content: center;
   border-top: 20px solid #17252A;
   margin-bottom: 100px;
+}
 
-}
-/* Skills */
-.Skills{
-  background-color: #DEF2F1;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-#Skills-h1{
-    text-align: center !important;
-    width: 100%;
-    margin-left: 30px;;
-    margin-top: 4%;
-    font-size: 60px;
-    display: inline-block;
-    font-family: 'Dosis', sans-serif !important;
-    transform-origin: top left;
-    color: #17252A;
-}
 ul{
-   list-style-type: none;
+     list-style-type: none;
+  }
+
+
+/* Services */
+.page2{
+  background-color: #DEF2F1;
+}
+.service-headline{
+  padding-top: 5% !important;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 2.6em;
+  color: #17252A;
+  /* text-decoration: underline; */
 }
 
-#Skills-section{
-  font-size: 30px;
+.service-subline{
+  font-family: 'Muli', sans-serif;
+  margin-right: 58%;
+  color: #17252A;
 }
-#skills-row{
-  padding-top: 3%;
-  margin: 0 auto;
+.services-set{
+  margin-top: 5%;
   display: grid;
-  width: 90%;
+  width: auto;
+  /* margin: 0 auto; */
+  width: 100%;
+  grid-gap: 7%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 200px;
-  grid-gap: 30px;
+  font-family: 'Muli', sans-serif;
 }
-.skill{
-  margin: auto;
+.service{
   text-align: center;
+  background-color: #17252A;
+  color: white;
 }
-img.skill-logos{
-  width: 150px;
+#service-no{;
+  color: #17252A;
+  padding: 4% 5.4% 4% 5.4%;
+  border-top: 10px;
+  border-radius: 80% !important;
+  background-color: #FEFFFF;
+  font-family: 'Muli', sans-serif;
 }
-.css{
-  width: 110px !important;
+#service-text{
+  padding: 0% 12% 0% 12%;
+  font-size: 15px;
 }
-.js{
-  width: 250px !important;
-}
-.cp{
-  width: 140px !important;
-}
-.django{
-  width: 170px !important;
-}
-.jquery{
-  width: 180px !important;
-}
-.react{
-  width: 350px !important;
-}
-.bootstrap{
-  width: 200px !important;
+#readmore{
+  background-color: white;
 }
