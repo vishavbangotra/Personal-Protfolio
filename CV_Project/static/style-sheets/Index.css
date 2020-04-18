@@ -61,42 +61,58 @@ a:hover{
   justify-content: center;
   border-top: 20px solid #17252A;
   margin-bottom: 100px;
+}
 
-}
-/* Skills */
-.Skills{
-  background-color: #DEF2F1;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-#Skills-h1{
-    margin-left: 30px;;
-    margin-top: 0%;
-    font-size: 60px;
-    display: inline-block;
-    transform: rotate(-90deg);
-    font-family: 'Dosis', sans-serif !important;
-    transform-origin: top left;
-    color: #17252A;
-}
 ul{
-   list-style-type: none;
+     list-style-type: none;
+  }
+
+
+/* Services */
+.page2{
+  background-color: #DEF2F1;
 }
-#ss1{
-  padding-top: 6%;
-  margin-left: 20%;
-  font-size: 25px;
+.service-headline{
+  padding-top: 5% !important;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 2.6em;
+  color: #17252A;
+  /* text-decoration: underline; */
 }
-#ss2{
-  margin-top: -10%;
-  text-align:center;
-  font-size: 25px;
+
+.service-subline{
+  font-family: 'Muli', sans-serif;
+  margin-right: 58%;
+  color: #17252A;
 }
-#ss3{
-  text-align: right;
-  margin-right: 18%;
-  margin-top: -9%;
-  font-size: 25px;
+.services-set{
+  margin-top: 5%;
+  display: grid;
+  width: auto;
+  /* margin: 0 auto; */
+  width: 100%;
+  grid-gap: 7%;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Muli', sans-serif;
 }
-#Skills-section{
-  font-size: 30px;
+.service{
+  text-align: center;
+  background-color: #17252A;
+  color: white;
+}
+#service-no{;
+  color: #17252A;
+  padding: 4% 5.4% 4% 5.4%;
+  border-top: 10px;
+  border-radius: 80% !important;
+  background-color: #FEFFFF;
+  font-family: 'Muli', sans-serif;
+}
+#service-text{
+  padding: 0% 12% 0% 12%;
+  font-size: 15px;
+}
+#readmore{
+  background-color: white;
 }
