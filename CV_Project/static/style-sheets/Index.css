@@ -52,16 +52,21 @@ a:hover{
   padding-top: 15px;
 }
 .arrow-down {
-  color: #17252A;
-  width: 0;
-  height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  display: flex;
-  justify-content: center;
-  border-top: 20px solid #17252A;
-  margin-bottom: 100px;
+  box-sizing: border-box;
+  height: 3ch;
+  width: 3ch;
+  border-style: solid;
+  border-color: #17252A;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
 }
+.arrow-down:hover{
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+}
+
+
 
 ul{
      list-style-type: none;
@@ -73,7 +78,7 @@ ul{
   background-color: #DEF2F1;
 }
 .service-headline{
-  padding-top: 5% !important;
+  padding-top: 2% !important;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: 2.6em;
