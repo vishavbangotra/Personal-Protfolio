@@ -1,19 +1,10 @@
 .homepage{
-  background-color: #3AAFA9 !important;
+  background-color: #F0F8FF !important;
+
 }
-/* navbar */
-.nav-item{
-  padding-top: 5px;
-  padding-left: 4%;
-  padding-right: 4%;
-}
-.nav-link{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 24px;
-  color: white;
-}
-a:hover{
-  color: #17252A !important;
+.mainmain{
+  padding-top: 8%;
+  padding-bottom: 4%;
 }
 
 .main-name{
@@ -26,8 +17,7 @@ a:hover{
 
 }
 .first-name{
-  padding-top: 11%;
-  color: #DEF2F1;
+  color: #1E90FF;
   font-size: 45px;
 
 }
@@ -36,7 +26,7 @@ a:hover{
   writing-mode: vertical-rl;
   text-orientation: mixed;
   margin-left: 51%;
-  margin-top: -7.8%;
+  margin-top: -7.2%;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
   color: #17252A;
@@ -51,72 +41,39 @@ a:hover{
   height: 36px;
   padding-top: 15px;
 }
-.arrow-down {
-  box-sizing: border-box;
-  height: 3ch;
-  width: 3ch;
-  border-style: solid;
-  border-color: #17252A;
-  border-width: 0px 1px 1px 0px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
-}
-.arrow-down:hover{
-  border-bottom-width: 5px;
-  border-right-width: 5px;
-}
-
 
 
 ul{
      list-style-type: none;
   }
-
-
-/* Services */
-.page2{
-  background-color: #DEF2F1;
-}
-.service-headline{
-  padding-top: 2% !important;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: bold;
-  font-size: 2.6em;
-  color: #17252A;
-  /* text-decoration: underline; */
-}
-
-.service-subline{
-  font-family: 'Muli', sans-serif;
-  margin-right: 58%;
-  color: #17252A;
-}
-.services-set{
-  margin-top: 5%;
-  display: grid;
-  width: auto;
-  width: 100%;
-  grid-gap: 7%;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  font-family: 'Muli', sans-serif;
-}
-.service{
+#myprojectsheadline{
+  margin: 5% 0% 5% 0%;
   text-align: center;
-  background-color: #17252A;
-  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 40px;
+
 }
-#service-no{;
-  color: #17252A;
-  padding: 4% 5.4% 4% 5.4%;
-  border-top: 10px;
-  border-radius: 80% !important;
-  background-color: #FEFFFF;
-  font-family: 'Muli', sans-serif;
+#my{
+
 }
-#service-text{
-  padding: 0% 12% 0% 12%;
-  font-size: 15px;
+
+#quote{
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  padding: 4% 0% 0% 0%;
 }
-#readmore{
-  background-color: white;
+.page2{
+
+}
+.project-grid{
+  margin-top: 2% !important;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:10px;
+}
+.card{
+  margin: 0 auto;
+  float: none;
 }

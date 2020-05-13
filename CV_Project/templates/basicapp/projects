@@ -1,0 +1,21 @@
+<div class="skill">
+  <h2 id='quote'>“Imagination is everything. It is the preview of life’s coming attractions.”</h2>
+  <h2 style="text-align: center; font-family: 'Dancing Script', cursive;padding: 1%; margin-left: 50%;">-Albert Einstien</h2>
+  <h1 id='myprojectsheadline'><span style="color: dodgerblue">my</span><span> Projects</span></h1>
+
+<div class="project-grid">
+  {% for project in projects %}
+  <div class="grid-item">
+    <div class="card" style="width: 25rem;">
+      <img src="{{project.image.url}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{project.title}}</h5>
+        <p class="card-text">{{project.summary}}</p>
+        <span></span>
+        <a href="{{project.github}}" class="btn btn-primary">source</a>
+      </div>
+    </div>
+    </div>
+  {% endfor %}
+</div>
+</div>
