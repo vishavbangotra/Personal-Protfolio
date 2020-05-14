@@ -1,0 +1,57 @@
+<div class='page2'>
+  <div class="container">
+    <h1 class='service-headline'>Services</h1>
+    <p class='service-subline'>If you want to make a website for you blog/bussiness contact me.
+      I am new to the field of Web development so I am looking
+      for projects to strengthen my skills. I don't charge any fee yet,
+      Just a good review and client satisfaction is all I need. </p>
+      <div class="services-set">
+        <div class=" service front-end">
+          <br>
+          <span id='service-no'>
+             1
+          </span>
+          <br>
+          <br>
+          <h4>Front-End</h4>
+          <p id='service-text'>From design to implement to code, I do it all.
+            Using latest technologies and techniques like JavaScript, Jquery and ReactJS. I provide the
+             best Front-end/User Interface development services to my clients. </p>
+           <button type="button" class="btn" id='readmore'>Read more</button>
+           <br>
+           <br>
+        </div>
+        <div class="service backend-end">
+          <br>
+          <span id='service-no'>
+             2
+          </span>
+          <br>
+          <br>
+          <h4>Back-End</h4>
+          <p id='service-text'>I provide strong Back-end development services using django.
+            My services includes API management, Data synchronization, Message notifications,
+            Integration and User authentiation</p>
+          <button type="button" class="btn" id='readmore'>Read more</button>
+          <br>
+        </div>
+        <div class=" service web-design">
+          <br>
+          <span id='service-no'>
+             3
+          </span>
+          <br>
+          <br>
+          <h4>Web design</h4>
+          <p id='service-text'>Responsive Web design and UI/UX Design
+            using popular tools like Adobe Photoshop, Adobe XD, Adobe Illustrator. Design beautiful templates for websites is part of my services.
+          </p>
+          <button style="margin-top: 20px;" type="button" class="btn" id='readmore'>Read more</button>
+        </div>
+      </div>
+      <br>
+      <ul class="nav justify-content-center">
+        <li style='padding-top:20px; padding-bottom: 50px;'class='nav-item'><a data-scroll href="#"><div class="arrow-down"></div></a></li>
+      </ul>
+  </div>
+</div>

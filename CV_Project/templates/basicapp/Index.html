@@ -2,20 +2,8 @@
 {% load static %}
 {% block body_block %}
 <div class="homepage">
-  <div>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Skills-sec">Skills</a>
-      </li>
-    </ul>
-  </div>
-  <div>
+
+  <div class='mainmain'>
     <h1 class='main-name first-name'>Vishav</h1><h2 class="main-name last-name"> Bangotra</h2>
     <ul class="nav justify-content-center">
       <li class="nav-item" style="padding-left:6px !important; padding-right:6px !important;">
@@ -26,67 +14,79 @@
       </li>
     </ul>
     <div class="webd"><span id='webd-1'>Full-stack</span><span id='webd-2'></span> Developer</div>
-    <!-- Down Button -->
-    <ul class="nav justify-content-center">
-      <li style='padding-top:240px; padding-bottom: 120px;'class='nav-item'><a data-scroll href="#"><div class="arrow-down"></div></a></li>
-    </ul>
+    <br><br><br>
   </div>
 </div>
-<div class='page2'>
-  <div class="container">
-    <h1 class='service-headline'>Services</h1>
-    <p class='service-subline'>If you want to make a website for you blog/bussiness contact me.
-      I am new to the field of Web development so I am looking
-      for projects to strengthen my skills. I don't charge any fee yet,
-      Just a good review and client satisfaction is all I need. </p>
-      <div class="services-set">
-        <div class=" service front-end">
-          <br>
-          <span id='service-no'>
-             1
-          </span>
-          <br>
-          <br>
-          <h4>Front-End</h4>
-          <p id='service-text'>From design to implement to code, I do it all.
-            Using latest technologies and techniques like JavaScript, Jquery and ReactJS. I provide the
-             best Front-end/User Interface development services to my clients. </p>
-           <button type="button" class="btn" id='readmore'>Read more</button>
-           <br>
-           <br>
-        </div>
-        <div class="service backend-end">
-          <br>
-          <span id='service-no'>
-             2
-          </span>
-          <br>
-          <br>
-          <h4>Back-End</h4>
-          <p id='service-text'>I provide strong Back-end development services using django.
-            My services includes API management, Data synchronization, Message notifications,
-            Integration and User authentiation</p>
-          <button type="button" class="btn" id='readmore'>Read more</button>
-          <br>
-        </div>
-        <div class=" service web-design">
-          <br>
-          <span id='service-no'>
-             3
-          </span>
-          <br>
-          <br>
-          <h4>Web design</h4>
-          <p id='service-text'>Responsive Web design and UI/UX Design
-            using popular tools like Adobe Photoshop, Adobe XD, Adobe Illustrator. Design beautiful templates for websites is part of my services.
-          </p>
-          <button style="margin-top: 20px;" type="button" class="btn" id='readmore'>Read more</button>
+
+
+
+<div class="page2">
+  <h2 id='quote'>“Imagination is everything. It is the preview of life’s coming attractions.”</h2>
+  <h2 style="text-align: center; font-family: 'Dancing Script', cursive;padding: 1%; margin-left: 50%;">-Albert Einstein</h2>
+  <h1 id='aboutmeheadline'><span style="color: dodgerblue">About</span><span> me</span></h1>
+  <div class="aboutsec">
+    {% for about in abouts %}
+      <!-- <div class="about-item">
+        <img style='width: 400px' src="{{about.mypic.url}}" alt="">
+      </div>
+      <div class="about-item about-text">
+        {{about.summary| linebreaks}}
+      </div> -->
+      <div class="about-item about-text">
+        <div class="media">
+          <img style='width: 380px' src="{{about.mypic.url}}" class="align-self-start mr-3" alt="...">
+          <div style='padding-left:0.8%;' class="media-body">
+            <h3 class="mt-0">Hi and Welcome!</h3>
+            <p>{{about.summary| linebreaks}}</p>
+            <a style='text-decoration: none;' target="_blank"href="{% static 'VishavBangotra_InternshalaResume.pdf' %}"><button class="btn btn-light btn-block">Résumé</button></a>
+          </div>
         </div>
       </div>
-      <br>
-      <ul class="nav justify-content-center">
-        <li style='padding-top:20px; padding-bottom: 50px;'class='nav-item'><a data-scroll href="#"><div class="arrow-down"></div></a></li>
-      </ul>
+      <div class="about-item skills">
+        <h2>My Skills</h2>
+        <div class="skills-sec">
+          <div>
+            <ul style='text-align: right;'>
+              <h3>Languages</h3>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript/ES6</li>
+              <li>Python3</li>
+              <li>Java</li>
+              <li>C/C++</li>
+            </ul>
+          </div>
+          <div>
+            <ul style='text-align: center;'>
+              <h3>Frameworks</h3>
+              <li>Django</li>
+              <li>Jquery</li>
+              <li>Bootstrap</li>
+              <li>Collections(Java)</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <h3>Others</h3>
+              <li>Git/Github</li>
+              <li>Atom</li>
+              <li>VS Code</li>
+              <li>Terminal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </div>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 {% endblock %}
