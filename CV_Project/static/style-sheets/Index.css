@@ -68,21 +68,25 @@ ul{
 .aboutsec{
 
   display: grid;
-  grid-template-columns: 1.7fr 1.30fr;
+  grid-template-columns: 1.8fr 1.2fr;
   grid-gap: 5%;
   width: 90%;
   margin:0 auto;
 }
 .about-text{
   font-family: 'Dosis', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
 }
 .skills{
   text-align: center;
   font-size: 22px;
   font-family: 'Dosis', sans-serif !important;
 }
-
+.skills-sec{
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 /* .project-grid{
   margin-top: 2% !important;
   display: grid;
