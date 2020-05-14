@@ -21,26 +21,30 @@
 
 
 <div class="page2">
-  <div class="skill">
-    <h2 id='quote'>“Imagination is everything. It is the preview of life’s coming attractions.”</h2>
-    <h2 style="text-align: center; font-family: 'Dancing Script', cursive;padding: 1%; margin-left: 50%;">-Albert Einstein</h2>
-    <h1 id='myprojectsheadline'><span style="color: dodgerblue">my</span><span> Projects</span></h1>
-
-  <div class="project-grid">
-    {% for project in projects %}
-    <div class="grid-item">
-      <div class="card" style="width: 25rem;">
-        <img src="{{project.image.url}}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">{{project.title}}</h5>
-          <p class="card-text">{{project.summary}}</p>
-          <span></span>
-          <a href="{{project.github}}" class="btn btn-outline-dark">source</a>
+  <h2 id='quote'>“Imagination is everything. It is the preview of life’s coming attractions.”</h2>
+  <h2 style="text-align: center; font-family: 'Dancing Script', cursive;padding: 1%; margin-left: 50%;">-Albert Einstein</h2>
+  <h1 id='aboutmeheadline'><span style="color: dodgerblue">About</span><span> me</span></h1>
+  <div class="aboutsec">
+    {% for about in abouts %}
+      <!-- <div class="about-item">
+        <img style='width: 400px' src="{{about.mypic.url}}" alt="">
+      </div>
+      <div class="about-item about-text">
+        {{about.summary| linebreaks}}
+      </div> -->
+      <div class="about-item about-text">
+        <div class="media">
+          <img style='width: 400px' src="{{about.mypic.url}}" class="align-self-start mr-3" alt="...">
+          <div style='padding-left:0.8%;' class="media-body">
+            <h3 class="mt-0">Hi and Welcome!</h3>
+            <p>{{about.summary| linebreaks}}</p>
+          </div>
         </div>
       </div>
+      <div class="about-item skills">
+        <h2>My Skills</h2>
       </div>
     {% endfor %}
-  </div>
   </div>
 </div>
 {% endblock %}

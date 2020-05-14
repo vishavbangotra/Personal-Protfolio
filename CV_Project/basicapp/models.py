@@ -24,3 +24,7 @@ class project(models.Model):
     image = models.ImageField(upload_to="images/")
     summary = models.CharField(max_length=256)
     github = models.URLField()
+
+class about(models.Model):
+    mypic = models.ImageField(upload_to="images/")
+    summary = models.TextField(max_length=512)
