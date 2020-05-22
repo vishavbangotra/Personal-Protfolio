@@ -2,15 +2,14 @@
 {% load static %}
 {% block body_block %}
 <div class="homepage">
-
   <div class='mainmain'>
-    <h1 class='main-name first-name'>Vishav</h1><h2 class="main-name last-name"> Bangotra</h2>
+    <h1 class='main-name first-name a'>Vishav</h1><h2 class="main-name last-name"> Bangotra</h2>
     <ul class="nav justify-content-center">
       <li class="nav-item" style="padding-left:6px !important; padding-right:6px !important;">
-        <a href="https://github.com/vishavbangotra"><img class="logos" src="{% static '/images/git.png' %}"alt="no git"></a>
+        <a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos'src="{% static '/gitblack.png' %}" alt=""></a>
       </li>
       <li class="nav-item" style="padding-left:6px !important; padding-right:6px !important;">
-        <a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos' src="{% static '/images/linkedin.png' %}" alt="no li"></a>
+        <a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos'src="{% static '/linkedin.png' %}" alt=""></a>
       </li>
     </ul>
     <div class="webd"><span id='webd-1'>Full-stack</span><span id='webd-2'></span> Developer</div>
@@ -22,60 +21,36 @@
 
 <div class="page2">
   <h2 id='quote'>“Imagination is everything. It is the preview of life’s coming attractions.”</h2>
-  <h2 style="text-align: center; font-family: 'Dancing Script', cursive;padding: 1%; margin-left: 50%;">-Albert Einstein</h2>
-  <h1 id='aboutmeheadline'><span style="color: dodgerblue">About</span><span> me</span></h1>
+  <h2 style="font-size: calc(1em + 1vw);text-align: center; font-family: 'Dancing Script', cursive;padding: 1%; margin-left: 50%;">-Albert Einstein</h2>
+  <h1 id='aboutmeheadline'><span style="color: dodgerblue">Profile</h1>
+    <h3 style='text-align: center !important; 'id='aboutmesubheadline'>A creative programmer</h1>
+      <hr style='width: 70%;'>
   <div class="aboutsec">
     {% for about in abouts %}
-      <!-- <div class="about-item">
-        <img style='width: 400px' src="{{about.mypic.url}}" alt="">
-      </div>
-      <div class="about-item about-text">
-        {{about.summary| linebreaks}}
-      </div> -->
-      <div class="about-item about-text">
         <div class="media">
-          <img style='width: 380px' src="{{about.mypic.url}}" class="align-self-start mr-3" alt="...">
           <div style='padding-left:0.8%;' class="media-body">
             <h3 class="mt-0">Hi and Welcome!</h3>
             <p>{{about.summary| linebreaks}}</p>
-            <a style='text-decoration: none;' target="_blank"href="{% static 'VishavBangotra_InternshalaResume.pdf' %}"><button class="btn btn-light btn-block">Résumé</button></a>
+          </div>
+          
+          <div class='media-main'>
+            <img id='myimg'style='width: 15rem; text-align: center !important; border-radius: 50%; margin-right: 0px !important;' src="{{about.mypic.url}}" class="align-self-start mr-3" alt="...">
+            <a style='text-decoration: none; text-align:center;' target="_blank"href="{% static 'VishavBangotra_InternshalaResume.pdf' %}"><button style='width: 70% !important; text-align:center; margin-top: 10px'class="btn btn-outline-primary btn-sm">Résumé</button></a>
+          </div>
+          <div class='media-details'>
+            <h3>Details</h3>
+            <div>
+              <strong>Name:</strong>
+              <br>Vishav Bangotra<br>
+              <strong>Age:</strong>
+              <br>20
+              <br><strong>Location:</strong>
+              <br>Chandigarh, India <br><br>
+              <button class='btn btn-outline-light'href="https://www.linkedin.com/"><img style="width: 6rem; margin-top:3px;" src="{% static '/images/linkedinln.png' %}" alt=""></a>
+
+            </div>
           </div>
         </div>
-      </div>
-      <div class="about-item skills">
-        <h2>My Skills</h2>
-        <div class="skills-sec">
-          <div>
-            <ul style='text-align: right;'>
-              <h3>Languages</h3>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript/ES6</li>
-              <li>Python3</li>
-              <li>Java</li>
-              <li>C/C++</li>
-            </ul>
-          </div>
-          <div>
-            <ul style='text-align: center;'>
-              <h3>Frameworks</h3>
-              <li>Django</li>
-              <li>Jquery</li>
-              <li>Bootstrap</li>
-              <li>Collections(Java)</li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <h3>Others</h3>
-              <li>Git/Github</li>
-              <li>Atom</li>
-              <li>VS Code</li>
-              <li>Terminal</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     {% endfor %}
   </div>
 </div>

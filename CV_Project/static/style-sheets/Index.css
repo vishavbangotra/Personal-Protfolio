@@ -1,8 +1,18 @@
+
 .homepage{
-  background-color: #F0F8FF !important;
+  /* background-color: #F0F8FF !important; */
+  width: auto;
+  margin:0 auto;
+  /* display: block; */
+  min-height: 100% !important;  
+  background: url("/static/img10.jpg") fixed;
+  background-size: auto;
+  
+
 
 }
 .mainmain{
+  opacity: 1 !important;
   padding-top: 8%;
   padding-bottom: 4%;
 }
@@ -15,10 +25,12 @@
   justify-content: center;
   font-family: 'Dosis', sans-serif;
 
+
 }
 .first-name{
-  color: #1E90FF;
-  font-size: 45px;
+  /* color: #4682B4; */
+  font-size: calc(2em + 1vw);
+  color:#FFD700;
 
 }
 .webd{
@@ -26,20 +38,19 @@
   writing-mode: vertical-rl;
   text-orientation: mixed;
   margin-left: 51%;
-  margin-top: -7.2%;
+  margin-top: -8%;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
-  color: #17252A;
+  color: #F0F8FF;
 }
 
 .last-name{
-  color: #17252A;
-  font-size: 32px;
+  color: #F0F8FF;
+  font-size: calc(1.2em + 1vw);
 }
 .logos{
-  width:25px;
-  height: 36px;
-  padding-top: 15px;
+  width:1.2rem;
+  margin-top: 15px;
 }
 
 
@@ -47,12 +58,19 @@ ul{
      list-style-type: none;
   }
 #aboutmeheadline{
-  margin: 5% 0% 5% 0%;
+  margin: 5% 0% 0% 0%;
   text-align: center;
   font-family: 'Dosis', sans-serif;
   font-size: 40px;
 
 }
+#aboutmesubheadline{
+  font-family: 'Dosis', sans-serif;
+  margin: 0.4rem auto;
+  
+}
+
+
 #my{
 
 }
@@ -60,42 +78,41 @@ ul{
 #quote{
   text-align: center;
   font-family: 'Dancing Script', cursive;
-  padding: 4% 0% 0% 0%;
+  padding: 8% 0% 0% 0%;
+  font-size: calc(1em + 1vw);
 }
 .page2{
-
 }
-.aboutsec{
-
+.media{
   display: grid;
-  grid-template-columns: 1.8fr 1.2fr;
-  grid-gap: 5%;
-  width: 90%;
-  margin:0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-gap: 5%; */
+  width: 70%;
+  margin:2rem auto;
+
 }
-.about-text{
+.media-main{
+  text-align: center;
+  margin: auto;
+
+}
+
+.media-body{
+  margin-top: .7rem !important;
   font-family: 'Dosis', sans-serif;
   font-size: 20px;
 }
-.skills{
-  text-align: center;
-  font-size: 22px;
-  font-family: 'Dosis', sans-serif !important;
+.media-details{
+  margin-top: 1rem !important;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
 }
-.skills-sec{
-  text-align: left;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
+#myimg{
+  width: 15rem; 
+  text-align: center !important;
+  border-radius: 50%; 
+  border: inset 1px lightblue;
+  margin-right: 0px !important;
 }
-/* .project-grid{
-  margin-top: 2% !important;
-  display: grid;
-  width: 90%;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap:10px;
-}
-.card{
-  margin: 0 auto;
-  float: none;
-} */
+
