@@ -5,7 +5,7 @@
   margin:0 auto;
   /* display: block; */
   min-height: 100% !important;  
-  background: url("/static/img10.jpg") fixed;
+  background: url("/static/img9.jpg") fixed;
   background-size: auto;
   
 
@@ -18,19 +18,20 @@
 }
 
 .main-name{
-  margin:0px;
+  margin:0px !important;
   border:0px;
   padding: 0px;
   display: flex;
   justify-content: center;
   font-family: 'Dosis', sans-serif;
+  font-size: calc(2em + 1vw);
 
 
 }
 .first-name{
   /* color: #4682B4; */
   font-size: calc(2em + 1vw);
-  color:#FFD700;
+  color:#FFFF99;
 
 }
 .webd{
@@ -61,7 +62,7 @@ ul{
   margin: 5% 0% 0% 0%;
   text-align: center;
   font-family: 'Dosis', sans-serif;
-  font-size: 40px;
+  font-size: calc(2em + 1vw);
 
 }
 #aboutmesubheadline{
@@ -71,23 +72,71 @@ ul{
 }
 
 
+
 #my{
 
 }
 
 #quote{
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dosis', sans-serif;
   padding: 8% 0% 0% 0%;
   font-size: calc(1em + 1vw);
 }
+
 .page2{
+  margin-bottom: 140px;
 }
+
+.logo-bar{
+  margin-top: 1em !important;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color:#FFFF99; */
+}
+
+.logo-bar-item{
+  text-align: center;
+  flex-grow: 1;
+}
+.logo-bar-img{
+  width: calc(1.5em + 1.5vw);
+} 
+.react{
+  width: calc(1.8em + 2vw) !important;
+  margin-top: -.2em;
+}
+.django{
+  margin-top: (1.5em + 1vw);
+  width: calc(2.5em + 2vw) !important;
+}
+.java{
+  margin-top: -.5em !important;
+}
+.py{
+  margin-top: -.1em;
+}
+.django{
+  margin-top: .4em;
+  width: calc(2.5em + 3vw) !important;
+}
+.mongodb{
+  margin-top: .2em;
+  width: calc(3em + 4.5vw) !important;
+}
+.mysql{
+  margin-top: -.5em;
+  width: calc(2em + 2.5vw) !important;
+}
+
+
 .media{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /* grid-gap: 5%; */
-  width: 70%;
+  grid-gap: 10%;
+  width: 80%;
   margin:2rem auto;
 
 }
@@ -100,12 +149,13 @@ ul{
 .media-body{
   margin-top: .7rem !important;
   font-family: 'Dosis', sans-serif;
-  font-size: 20px;
+   font-size: calc(1em + .3vw) !important;
 }
+
 .media-details{
   margin-top: 1rem !important;
   font-family: 'Dosis', sans-serif;
-  font-size: 20px;
+  font-size: calc(1em + .3vw) !important;
 }
 
 #myimg{
@@ -116,3 +166,56 @@ ul{
   margin-right: 0px !important;
 }
 
+
+/* Education and Fucking experiences */
+
+
+.page3{
+  background-color:#FFFF99;
+  font-family: 'Dosis', sans-serif;
+}
+
+#abilities-h{
+  color: blue;
+  padding-top: 2%;
+  font-size: calc(1.8em + 1vw);
+}
+
+#ab-quote{
+  font-size: calc(.6em + 1vw);
+}
+.ab-section{
+  margin:0 auto;
+  width: 70%;
+}
+.ab-skills{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  font-size: 1.2em;
+  margin: 0 auto;;
+
+}
+#skills-row1{
+  text-align: center;
+}
+#skills-row2{
+  text-align: center;
+}
+
+
+
+
+.page4{
+  background-color: lightskyblue !important;
+  font-family: 'Dosis', sans-serif;
+}
+#exp-h{
+  text-align: center;
+  padding-top: 2%;
+  font-size: calc(1.8em + 1vw);
+}
+#exp-quote{
+  text-align: center;
+  font-size: calc(.6em + 1vw);
+
+}

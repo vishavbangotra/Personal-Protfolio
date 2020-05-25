@@ -6,7 +6,7 @@
     <h1 class='main-name first-name a'>Vishav</h1><h2 class="main-name last-name"> Bangotra</h2>
     <ul class="nav justify-content-center">
       <li class="nav-item" style="padding-left:6px !important; padding-right:6px !important;">
-        <a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos'src="{% static '/gitblack.png' %}" alt=""></a>
+        <a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos'src="{% static '/git.png' %}" alt=""></a>
       </li>
       <li class="nav-item" style="padding-left:6px !important; padding-right:6px !important;">
         <a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos'src="{% static '/linkedin.png' %}" alt=""></a>
@@ -17,11 +17,23 @@
   </div>
 </div>
 
-
-
 <div class="page2">
+  <div class='logo-bar'>
+    <span class='logo-bar-item'><img class='logo-bar-img java' src="{% static '/images/javaclean.png' %}" alt=""></span>
+    <span class='logo-bar-item'><img class='logo-bar-img js' src="{% static '/images/javascript.png' %}" alt=""></span>
+    <span class='logo-bar-item'><img class='logo-bar-img ts' src="{% static '/images/typescript.png' %}" alt=""></span>
+    <span class='logo-bar-item'><img class='logo-bar-img react' src="{% static '/images/reactjs.png' %}" alt=""></span>
+    <span class='logo-bar-item one'><img class='logo-bar-img py'src="{% static '/images/python.png' %}" alt=""></span>
+    <span class='logo-bar-item'><img class='logo-bar-img django' src="{% static '/images/django.png' %}" alt=""></span>
+    <span class='logo-bar-item'><img class='logo-bar-img mongodb' src="{% static '/images/mongodb.png' %}" alt=""></span>
+    <span class='logo-bar-item'><img class='logo-bar-img mysql' src="{% static '/images/mysql.png' %}" alt=""></span>
+
+  </div>
+
+
+
   <h2 id='quote'>“Imagination is everything. It is the preview of life’s coming attractions.”</h2>
-  <h2 style="font-size: calc(1em + 1vw);text-align: center; font-family: 'Dancing Script', cursive;padding: 1%; margin-left: 50%;">-Albert Einstein</h2>
+  <h2 style="font-size: calc(1em + 1vw);text-align: center; font-family: 'Dosis', sans-serif;padding: 1%; margin-left: 50%;">-Albert Einstein</h2>
   <h1 id='aboutmeheadline'><span style="color: dodgerblue">Profile</h1>
     <h3 style='text-align: center !important; 'id='aboutmesubheadline'>A creative programmer</h1>
       <hr style='width: 70%;'>
@@ -30,7 +42,7 @@
         <div class="media">
           <div style='padding-left:0.8%;' class="media-body">
             <h3 class="mt-0">Hi and Welcome!</h3>
-            <p>{{about.summary| linebreaks}}</p>
+            <p class='about-text'>{{about.summary| linebreaks}}</p>
           </div>
           
           <div class='media-main'>
@@ -54,14 +66,67 @@
     {% endfor %}
   </div>
 </div>
-<br><br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+
+
+<div class='page3'>
+  <br>
+  <h1 id='abilities-h' style='text-align: center;'>Abilities</h1>
+  <p id='ab-quote' style="text-align: center;">“Life without knowledge is death in disguise.”
+    <br>- Talib Kweli </p>
+
+    <hr style='width: 50%'>
+    <div class='ab-section'>
+      <h1 style='text-align:center'>Skills</h2>
+        <br>
+        <br>
+      <div class='ab-skills'>
+        <div id='skills-row1'>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>SCSS</li>
+            <li>Bootstrap</li>
+            <li>Web Design</li>
+            <li>JavaScript</li>
+            <li>Jquery</li>
+            <li>SEO</li>
+            <li>Ajax</li>
+            <li>JSON</li>
+            <li>React.js</li>
+          </ul>
+        </div>
+        <div id='skills-row2'>
+          <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Java</li>
+            <li>Spring boot</li>
+            <li>REST APIs</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>C/C++</li>
+            <li>MongoDB</li>
+            <li>API testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  </div>
+<div class='page4'>
+  <h1 id='exp-h'>Experiences</h1>
+  <p id='exp-quote'>“Protons give an atom its identity, electrons its personality.”
+    <br>- Bill Bryson, A short history of nearly everything
+  </p>
+  <hr style='width: 70%'>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 {% endblock %}
