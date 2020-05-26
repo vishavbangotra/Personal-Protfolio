@@ -2,11 +2,11 @@
 {% load static %}
 {% block body_block %}
 <div class="homepage">
-  <div class='mainmain'>
+  <!-- <div class='mainmain'>
     <h1 class='main-name first-name a'>Vishav</h1><h2 class="main-name last-name"> Bangotra</h2>
     <ul class="nav justify-content-center">
       <li class="nav-item" style="padding-left:6px !important; padding-right:6px !important;">
-        <a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos'src="{% static '/git.png' %}" alt=""></a>
+        <a href="https://github.com/vishavbangotra"><img class='logos'src="{% static '/git.png' %}" alt=""></a>
       </li>
       <li class="nav-item" style="padding-left:6px !important; padding-right:6px !important;">
         <a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos'src="{% static '/linkedin.png' %}" alt=""></a>
@@ -14,19 +14,32 @@
     </ul>
     <div class="webd"><span id='webd-1'>Full-stack</span><span id='webd-2'></span> Developer</div>
     <br><br><br>
+  </div> -->
+  <div class='mainmain'>
+    <div class='main-name'><p class='first-name'>Vishav</p><p class='last-name'></p></div>
+    &ensp;
+    <div class="webd">Full-stack Developer</div>
+  </div>
+  <div class='logos-top'>
+    <span span id='lilogo'><a href="https://www.linkedin.com/in/vishav-bangotra-331396169"><img class='logos'src="{% static '/linkedin.png' %}" alt=""></a></span>
+
+    <span span id='gitlogo'><a href="https://github.com/vishavbangotra"><img class='logos'src="{% static '/git.png' %}" alt=""></a></span>
   </div>
 </div>
 
 <div class="page2">
   <div class='logo-bar'>
     <span class='logo-bar-item'><img class='logo-bar-img java' src="{% static '/images/javaclean.png' %}" alt=""></span>
+    <span class='logo-bar-item'><img class='logo-bar-img cpp' src="{% static '/images/c++.png' %}" alt=""></span>
     <span class='logo-bar-item'><img class='logo-bar-img js' src="{% static '/images/javascript.png' %}" alt=""></span>
     <span class='logo-bar-item'><img class='logo-bar-img ts' src="{% static '/images/typescript.png' %}" alt=""></span>
+    <span class='logo-bar-item'><img class='logo-bar-img nodejs' src="{% static '/images/nodejs-new-black.png' %}" alt=""></span>
     <span class='logo-bar-item'><img class='logo-bar-img react' src="{% static '/images/reactjs.png' %}" alt=""></span>
     <span class='logo-bar-item one'><img class='logo-bar-img py'src="{% static '/images/python.png' %}" alt=""></span>
     <span class='logo-bar-item'><img class='logo-bar-img django' src="{% static '/images/django.png' %}" alt=""></span>
     <span class='logo-bar-item'><img class='logo-bar-img mongodb' src="{% static '/images/mongodb.png' %}" alt=""></span>
     <span class='logo-bar-item'><img class='logo-bar-img mysql' src="{% static '/images/mysql.png' %}" alt=""></span>
+    <span class='logo-bar-item'><img class='logo-bar-img postgresql' src="{% static '/images/postgresql.png' %}" alt=""></span>
 
   </div>
 
@@ -35,7 +48,7 @@
   <h2 id='quote'>“Imagination is everything. It is the preview of life’s coming attractions.”</h2>
   <h2 style="font-size: calc(1em + 1vw);text-align: center; font-family: 'Dosis', sans-serif;padding: 1%; margin-left: 50%;">-Albert Einstein</h2>
   <h1 id='aboutmeheadline'><span style="color: dodgerblue">Profile</h1>
-    <h3 style='text-align: center !important; 'id='aboutmesubheadline'>A creative programmer</h1>
+    <h3 style='text-align: center !important; 'id='aboutmesubheadline'></h1>
       <hr style='width: 70%;'>
   <div class="aboutsec">
     {% for about in abouts %}
