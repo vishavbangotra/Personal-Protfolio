@@ -9,49 +9,6 @@
   background-size: auto;
 
 }
-/* 
-.mainmain{
-  opacity: 1 !important;
-  padding-top: 8%;
-  padding-bottom: 4%;
-}
-
-.main-name{
-  margin:0px !important;
-  border:0px;
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-  font-family: 'Dosis', sans-serif;
-  font-size: calc(2em + 1vw);
-
-
-}
-.first-name{
-  color: #4682B4; 
-  font-size: calc(2em + 1vw);
-  color:#FFFF99;
-
-}
-.webd{
-  padding-left: 50px;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  margin-left: 51%;
-  margin-top: -8%;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 18px;
-  color: #F0F8FF;
-}
-
-.last-name{
-  color: #F0F8FF;
-  font-size: calc(1.2em + 1vw);
-}
-.logos{
-  width:1.2rem;
-  margin-top: 15px;
-} */
 .mainmain{
   padding-top: calc(5rem + 1.5vw);
   margin-bottom: -18px;
@@ -59,6 +16,7 @@
   justify-content: center;
   color: white;
   font-family: 'Dosis', sans-serif;
+
 
 }
 .first-name{
@@ -69,7 +27,7 @@
 
 }
 .last-name{
-  margin-top: -20px !important;
+  margin-top: -18px !important;
   text-align: center !important;
   font-size: calc(1.3rem + 1vw);
 }
@@ -111,8 +69,6 @@ ul{
   
 }
 
-
-
 #my{
 
 }
@@ -134,6 +90,7 @@ ul{
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  box-shadow:0 8px 6px -6px skyblue;
   /* background-color:#FFFF99; */
 }
 
@@ -221,7 +178,7 @@ ul{
 }
 
 #abilities-h{
-  color: blue;
+  color: dodgerblue;;
   padding-top: 2%;
   font-size: calc(1.8em + 1vw);
 }

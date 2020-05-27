@@ -28,9 +28,7 @@ else{
 var bangotra = ['B','a','n','g','o','t','r','a']
 var  i=0;
 setInterval(function(){
-    $('.last-name').append(bangotra[i]);
-    // $('.webd').append(fullstackdeveloper[i]);
-    i++;
+        $('.last-name').append(bangotra[i++]);
 }, 150)
 
 var fullstackdeveloper = ['F','u','l','l','-',
