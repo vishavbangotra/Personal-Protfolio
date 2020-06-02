@@ -42,25 +42,23 @@
   </div>
 
 
-
-  <h2 id='quote'>“Imagination is everything. It is the preview of life’s coming attractions.”</h2>
-  <h2 style="font-size: calc(1em + 1vw);text-align: center; font-family: 'Dosis', sans-serif;padding: 1%; margin-left: 50%;">-Albert Einstein</h2>
+  <div class="container">
+  <h2 id='quote'>“Imagination is everything. It is the preview of life’s coming attractions.” <br>-Albert Einstein</h2>
   <h1 id='aboutmeheadline'><span style="color: dodgerblue">Profile</h1>
-    <h3 style='text-align: center !important; 'id='aboutmesubheadline'></h1>
+    <h3 style='text-align: center !important; 'id='aboutmesubheadline'>A Creative Programmer</h1>
       <hr style='width: 70%;'>
   <div class="aboutsec">
     {% for about in abouts %}
-        <div class="media">
-          <div style='padding-left:0.8%;' class="media-body">
+        <div class="media row align-items-center">
+          <div class="media-body col-lg-6">
             <h3 class="mt-0">Hi and Welcome!</h3>
             <p class='about-text'>{{about.summary| linebreaks}}</p>
           </div>
-          
-          <div class='media-main'>
+          <div class='media-main col-lg'>
             <img id='myimg'style='width: 15rem; text-align: center !important; border-radius: 50%; margin-right: 0px !important;' src="{{about.mypic.url}}" class="align-self-start mr-3" alt="...">
             <a style='text-decoration: none; text-align:center;' target="_blank"href="{% static 'VishavBangotra_InternshalaResume.pdf' %}"><button style='width: 70% !important; text-align:center; margin-top: 10px'class="btn btn-outline-primary btn-sm">Résumé</button></a>
           </div>
-          <div class='media-details'>
+          <div class='media-details col-lg'>
             <h3>Details</h3>
             <div>
               <strong>Name:</strong>
@@ -70,68 +68,30 @@
               <br><strong>Location:</strong>
               <br>Chandigarh, India <br><br>
               <button class='btn btn-outline-light'href="https://www.linkedin.com/"><img style="width: 6rem; margin-top:3px;" src="{% static '/images/linkedinln.png' %}" alt=""></a>
-
             </div>
           </div>
         </div>
     {% endfor %}
   </div>
+  <br>
+  <br>
+  <div id='skills'>
+  <h1>Skills</h1>
+    <h4>Frontend</h4>
+    <p>HTML, CSS, SASS, Bootstrap, JavaScript, Jquery, TypeScript, React, AJAX.</p>
+    <h4>Backend</h4>
+    <p>Python, Django, REST API, NodeJS, JSON, MongoDB, mySQL, Java.</p>
+    <h4>Others</h4>
+    <p>Linux/MacOS terminal, Atom, Git/Github, Web Design.</p>
+  </div>
+</div>
 </div>
 
 
-
-
-<div class='page3'>
-  <br>
-  <h1 id='abilities-h' style='text-align: center;'>Abilities</h1>
-  <p id='ab-quote' style="text-align: center;">“Life without knowledge is death in disguise.”
-    <br>- Talib Kweli </p>
-
-    <hr style='width: 50%'>
-    <div class='ab-section'>
-      <h1 style='text-align:center'>Skills</h2>
-        <br>
-        <br>
-      <div class='ab-skills'>
-        <div id='skills-row1'>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>SCSS</li>
-            <li>Bootstrap</li>
-            <li>Web Design</li>
-            <li>JavaScript</li>
-            <li>Jquery</li>
-            <li>SEO</li>
-            <li>Ajax</li>
-            <li>JSON</li>
-            <li>React.js</li>
-          </ul>
-        </div>
-        <div id='skills-row2'>
-          <ul>
-            <li>Python</li>
-            <li>Django</li>
-            <li>Java</li>
-            <li>Spring boot</li>
-            <li>REST APIs</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>C/C++</li>
-            <li>MongoDB</li>
-            <li>API testing</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-  </div>
-<div class='page4'>
-  <h1 id='exp-h'>Experiences</h1>
-  <p id='exp-quote'>“Protons give an atom its identity, electrons its personality.”
-    <br>- Bill Bryson, A short history of nearly everything
+<div class='footer-page'>
+  <h1 id='footer-head'>Contact</h1>
+  <p id='footer-quote'>“If I had asked people what they wanted, they would have said faster horses. ”
+    <br>- Henry Ford 
   </p>
   <hr style='width: 70%'>
 

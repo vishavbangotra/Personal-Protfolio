@@ -1,20 +1,20 @@
-$(document).ready(function() {
-$(".arrow-down").click(function() {
-     $('html, body').animate({
-         scrollTop: $(".service-headline").offset().top
-     }, 1000);
- });
-});
+// $(document).ready(function() {
+// $(".arrow-down").click(function() {
+//      $('html, body').animate({
+//          scrollTop: $(".service-headline").offset().top
+//      }, 1000);
+//  });
+// });
 
-var subheadline = [
-    'A',' ','C', 'r','e',
-    'a','t','i','v','e',' ', 'p',
-    'r','o','g','r','a','m','m','e','r'
-]
-var index = 0;
-setInterval(function(){
-        $('#aboutmesubheadline').append(subheadline[index++]);
-}, 100)
+// var subheadline = [
+//     'A',' ','C', 'r','e',
+//     'a','t','i','v','e',' ', 'p',
+//     'r','o','g','r','a','m','m','e','r'
+// ]
+// var index = 0;
+// setInterval(function(){
+//         $('#aboutmesubheadline').append(subheadline[index++]);
+// }, 100)
 
 var windowSize = $(window).width();
 
